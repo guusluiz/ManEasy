@@ -1,10 +1,16 @@
+  @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root {}
+:root {
+    --font1: 'Jost', sans-serif;
+    --font2: 'League Spartan', sans-serif;
+}
 
 body {
     background-color: #2274AC;
@@ -12,6 +18,7 @@ body {
 
 main {
     display: flex;
+    height: 100vh;
 }
 
 .logo_menu {
@@ -30,7 +37,6 @@ aside {
 
 .menu {
     min-width: 20%;
-    min-height: 100vh;
     background-color: #2274AC;
 }
 
@@ -50,7 +56,6 @@ aside {
 
 .btn_menu>a:hover {
     background-color: #FFD100;
-
 }
 
 
@@ -66,7 +71,6 @@ aside {
     display: flex;
     align-items: center;
     font-family: 'Jost', sans-serif;
-
 }
 
 
@@ -91,14 +95,7 @@ footer a:hover {
 }
 
 
-
-
-
-
-
-
-
-
+/* Conteúdo */
 
 
 .titulo {
@@ -117,7 +114,6 @@ section nav a {
 }
 
 section {
-    min-height: 100vh;
     width: 100%;
     background-color: #ffffff;
     border-radius: 40px 0 0 40px;
@@ -125,8 +121,6 @@ section {
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
-
 }
 
 .pesquisa_projeto {
@@ -147,7 +141,7 @@ section {
 }
 
 .icon {
-    padding-top: 10px;
+    padding:11px 0 0 5px;
     color: #474545;
     min-width: 40px;
 }
@@ -157,4 +151,16 @@ section {
     border-radius: 100px;
     width: 150px;
     padding: 10px 10px 10px 30px;
+}
+
+h1{
+    font-family: var(--font2);
+    font-size: 44px;
+    padding: 20px;
+    color: #2274AC;
+}
+
+h2{
+    font-family: var(--font2);
+    font-size: 22px;
 }
