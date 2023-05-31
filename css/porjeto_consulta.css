@@ -1,5 +1,4 @@
-  @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;700&display=swap');
 
 * {
     margin: 0;
@@ -8,8 +7,7 @@
 }
 
 :root {
-    --font1: 'Jost', sans-serif;
-    --font2: 'League Spartan', sans-serif;
+    --font: 'Jost', sans-serif;
 }
 
 body {
@@ -21,12 +19,18 @@ main {
     height: 100vh;
 }
 
-.logo_menu {
-    width: 250px;
+a {
+    text-decoration: none;
+    font-family: var(--font);
 }
 
-/*font-family: 'Jost', sans-serif;*/
+p {
+    font-family: var(--font);
+}
 
+.logo_menu {
+    width: 200px;
+}
 
 aside {
     display: flex;
@@ -36,15 +40,17 @@ aside {
 }
 
 .menu {
-    min-width: 20%;
+    width: 20%;
     background-color: #2274AC;
+    height: 100vh;
 }
 
 .btn_menu iconify-icon {
-    padding: 10px;
+    padding: 8px;
     border-radius: 100px;
     background-color: #FFD100;
     color: #474545;
+    margin-right: 5px;
 }
 
 .btn_menu {
@@ -61,12 +67,11 @@ aside {
 
 .btn_menu a {
     margin: 10px;
-    width: 200px;
-    height: 40px;
+    width: 180px;
+    height: 38px;
     border-radius: 100px;
     background-color: white;
     color: #474545;
-    text-decoration: none;
     font-size: 20px;
     display: flex;
     align-items: center;
@@ -80,7 +85,6 @@ footer a {
     padding: 15px;
     background-color: #499AD1;
     color: #ffffff;
-    text-decoration: none;
     font-size: 20px;
     align-items: center;
     display: flex;
@@ -96,12 +100,15 @@ footer a:hover {
 
 
 /* Conteúdo */
-
+.container{
+    width: 800px;
+    margin: 0 auto;
+}
 
 .titulo {
     display: flex;
     align-items: center;
-    margin: 50px 0 0 100px;
+    margin: 40px 0 0 100px;
 }
 
 section nav {
@@ -110,10 +117,10 @@ section nav {
 }
 
 section nav a {
-    margin: 50px;
+    margin: 15px 40px 30px;
 }
 
-section {
+.conteudo {
     width: 100%;
     background-color: #ffffff;
     border-radius: 40px 0 0 40px;
@@ -121,11 +128,12 @@ section {
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: 265px 0;
 }
 
 .pesquisa_projeto {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 
 }
@@ -141,9 +149,9 @@ section {
 }
 
 .icon {
-    padding:11px 0 0 5px;
+    padding: 11px 0 0 5px;
     color: #474545;
-    min-width: 40px;
+    width: 40px;
 }
 
 .input-field {
@@ -153,14 +161,41 @@ section {
     padding: 10px 10px 10px 30px;
 }
 
-h1{
-    font-family: var(--font2);
+h1 {
+    font-family: var(--font);
+    font-weight: 700;
     font-size: 44px;
     padding: 20px;
     color: #2274AC;
 }
 
-h2{
-    font-family: var(--font2);
+#btn_cadastrar {
+    font-weight: 400;
+    font-size: 25px;
+    color: #474545;
+}
+
+#btn_consultar {
+    font-weight: 700;
+    font-size: 25px;
+    color: #474545;
+}
+
+.chapa_size {
+    padding-right: 270px;
+}
+
+.nome_size {
+    padding-right: 370px;
+}
+
+.lupa {
+    width: 40px;
+}
+
+h2 {
+    font-family: var(--font);
+    font-weight: 700;
     font-size: 22px;
+    color: #474545;
 }
